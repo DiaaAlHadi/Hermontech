@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../Fonts/Barlow-Regular.woff2') format('woff2'),
+        url('../Fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    font-family: Barlow;
+}
+body {
+    background-image: url(../images/bussiness-for-web.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+
+}
+
+.above-nav {
+    background-color: #0c0e49;
+}
+
+.nav-bg {
+    background-color: transparent;
+    border-bottom: 1px solid #6D7173;
+}
+
+.navbar-collapse {
+    flex-grow: .2 !important;
+}
+
+
+ul>li>a {
+    color: #FAFDFA !important;
+    transition: ease .2s !important;
+    display: inline-block !important;
+}
+ul>li>a:hover{
+    transform: scale(1.05);
+}
+
+.dashboard-date-time>div>img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+}
+
+.dashboard-date-time {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.full-height{
+    height:84vh;
+}
+
+.btn-servies{
+    background-color: #0c0e49;
+}
+
+@media (max-width: 400px) {
+    .dashboard-date-time>div>img {
+        width: 10px;
+        height: 10px;
+    }
+    .dashboard-date-time {
+        font-size: 10px;
+    }
+    
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

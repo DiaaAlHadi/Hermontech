@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../Fonts/Barlow-Regular.woff2') format('woff2'),
+        url('../Fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    font-family: Barlow;
+}
+
+
+.nav-bg {
+    background-color: #0c0e49;
+    border-bottom: 1px solid #6D7173;
+}
+
+.navbar-collapse {
+    flex-grow: .8 !important;
+}
+
+
+ul>li>a {
+    color: #FAFDFA !important;
+    transition: ease .2s !important;
+    display: inline-block !important;
+}
+ul>li>a:hover{
+    transform: scale(1.05);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.dashboard-date-time>div>img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+}
+
+.dashboard-date-time {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color{
+    color: #0c0e49;
+}
+.secondery-color{
+    color: #7c8ac9 !important;
+}
+.first-color{
+    color: #191985;
+}
+.title-img{
+    width: 20%;
+}
+.custem-text{
+    line-height: 4rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .title-img{
+        width: 15%;
+    }
+    .custem-text{
+        text-align: unset;
+    }
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

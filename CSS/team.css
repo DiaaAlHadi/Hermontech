@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../Fonts/Barlow-Regular.woff2') format('woff2'),
+        url('../Fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    font-family: Barlow;
+}
+
+
+.nav-bg {
+    background-color: #0c0e49;
+    border-bottom: 1px solid #6D7173;
+}
+
+.navbar-collapse {
+    flex-grow: .8 !important;
+}
+
+
+ul>li>a {
+    color: #FAFDFA !important;
+    transition: ease .2s !important;
+    display: inline-block !important;
+}
+ul>li>a:hover{
+    transform: scale(1.05);
+}
+
+
+.dashboard-date-time>div>img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+}
+
+.dashboard-date-time {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color{
+    color: #0c0e49;
+}
+.secondery-color{
+    color: #7c8ac9 !important;
+}
+.first-color{
+    color: #191985;
+}
+
+
+/* CSS for the carousel loop */
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(15%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-15%);
+    }
+    
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.card{
+    --bs-card-border-color: transparent;
+}
+.carousel-item{
+    transition: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+    opacity: 1;
+}
+@media  (max-width: 799px){
+    .carousel-control-next, .carousel-control-prev {
+        width: 18%;
+    }
+}
+.carousel-control-next{
+    background: linear-gradient(to right, #ffffff33, #ffffff99,#ffffff, #ffffff) !important;
+}
+.carousel-control-prev{
+    background: linear-gradient(to left, #ffffff33, #ffffff99,#ffffff, #ffffff) !important;
+}
+.card-info{
+    border: 1px solid #7c8ac9;
+    border-radius: 15px;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

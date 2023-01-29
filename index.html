@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class="col-12 above-nav d-flex justify-content-between px-md-5 py-2">
+                <div class="d-flex dashboard-date-time me-1 d-lg-flex d-none">
+                    <span class="me-md-5 me-sm-1">Call Us: 123-456-789</span>
+                    <span>Email Us: companyname@info.com</span>
+                </div>
+                <div class="d-flex dashboard-date-time me-md-3">
+                    <div>
+                        <img src="images/calendar.png" alt="calendar icon" >
+                        <span class=" px-1" id="TodayDate"></span>
+                    </div>
+                    <div class="ps-1">
+                        <img src="images/clock.png" alt="clock icon">
+                        <span class=" ps-1" id="TodayTime"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg nav-bg py-0">
+        <div class="container-fluid ps-md-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="site logo" width="43px" height="40px" class="mb-2">
+                <span class="h3 text-light">Hermontech</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars text-light"></i>
+            </button>
+            <div class="justify-content-center collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item h6 me-4">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item h6 me-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item h6 me-4">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item h6 me-4">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item h6 mb-2">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid full-height">
+            <div class="col-12 d-table-cell align-middle ps-md-5 ps-sm-2 text-light full-height">
+                <h4>EMPOWER YOUR BUSINESS</h4>
+                <h1 class="bold">SOFTWARE DEVELOPMENT</h1>
+                <h3 class="bold">with latest technology</h3>
+                <div class="d-flex mt-4">
+                    <a href="services.html"><button class="btn btn-lg text-light btn-servies px-2 py-0 ">Our Services</button></a>
+                    <a href="contact.html" class="text-light ms-4 mt-1">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
